@@ -1,0 +1,38 @@
+.menu{
+    cursor:pointer;
+}
+.menu .line{
+    width:30px;
+    height:5px;
+    margin:10px 0;
+    background:rgb(74, 74, 74);
+}
+
+.container{
+  position:fixed;
+  transition:height 0.5s;
+  left:0;
+  top:0;
+  background:rgb(91, 91, 91);
+  overflow-y:hidden;
+  width:100%;
+  height:0;
+}
+
+.container a{
+    font-size:35px;
+    display:block;
+    padding:25px;
+    color:white;
+    text-decoration: none;
+}
+.container a:hover{
+    color:rgb(190, 190, 190);
+}
+
+.container .close{
+    position:absolute;
+    font-size:30px;
+    top:0;
+    right:0;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scroll</title>
+    </head>
+    <style>
+body{
+            margin:0;
+    }
+#nav{
+    top:-100px;
+    position:fixed;
+    background:black;
+    overflow:hidden;
+    width:100%;
+    display:block;
+    transition:0.5s;
+}
+#nav a{
+    display:block;
+    padding:20px;
+    font-size:15px;
+    text-decoration:none;
+    color:white;
+    float:left;
+}
+
+#nav a:hover{
+    background:rgb(19, 154, 19);
+    color:black;
+}
+
+    </style>
+    <body>
+        <div id="nav">
+            <a href="#">home</a>
+            <a href="#">contact</a>
+            <a href="#">about</a>
+        </div>
+
+      <div class="content" style="padding:100px 20px 1000px;background:rgb(166, 166, 166);font-size:25px;">
+        <p><b>This example demonstrates how to slide down a navbar when the user starts to scroll the page.</b></p>
+  <p>Scroll down this frame to see the effect!</p>
+  <p>Scroll to the top to hide the navbar.</p>
+  <p>Lorem ipsum dolor dummy text sit amet, 
+    consectetur adipiscing elit, sed do eiusmod 
+    tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+     laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+     irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+       sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <script>
+        window.onscroll=function(){scroll_content()};
+        function scroll_content(){
+            if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+                document.getElementById("nav").style.top="0";
+            }
+            else{
+                document.getElementById("nav").style.top="-100px";
+            }
+        }
+        </script>
+    </body>
+</html>

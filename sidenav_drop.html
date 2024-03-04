@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>side</title>
+        <link rel="stylesheet" href="sidenav_drop.css">
+        
+    </head>
+    <body>
+        <div class="sidenav">
+            <a  class="side" href="#">home</a>
+            <a  class="side" href="#">news</a>
+            <button type="button">dropdown</button>
+            <div class="container">
+                <a href="#" class="content">content 1</a>
+                <a href="#" class="content">content 2</a>
+                <a href="#" class="content">content 3</a>
+            </div>
+            <a class="side" href="#">contact</a>
+        </div>
+        <script>
+            var dropdown = document.getElementsByTagName("button");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+  });
+}
+
+        </script>
+    </body>
+</html>

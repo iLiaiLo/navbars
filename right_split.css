@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+}
+.menu{
+    position:absolute;
+    overflow:hidden;
+    background:rgb(16, 167, 183);
+    width:100%;
+}
+.menu a{
+    padding:20px;
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+    display:block;
+    float:left;
+}
+.menu .find{
+    float:right;
+}
+.menu .new{
+    float:right;
+}
+.menu a:hover{
+    color:rgb(158, 190, 215);
+    background:aliceblue;
+}

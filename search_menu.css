@@ -1,0 +1,36 @@
+*{
+    box-sizing:border-box;
+}
+.container{
+   width:400px;
+   background:rgb(37, 118, 126);
+
+}
+.colimn{
+    padding:20px 0;
+}
+h1{
+    padding:10px 10px;
+}
+#input{
+    width:100%;
+    font-size:18px;
+    padding:15px;
+    border:1px solid;
+}
+#list{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+#list>li>a{
+    padding:14px;
+    font-size:20px;
+    color:black;
+    display:block;
+    text-decoration:none;
+}
+#list>li>a:hover{
+    background:rgb(16, 167, 16);
+}

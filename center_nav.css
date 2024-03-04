@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+.menu{
+    overflow:hidden;
+    position:absolute;
+    background:tomato;
+    width:100%;
+}
+.menu a{
+    float:left;
+    display:block;
+    color:white;
+    padding:17px;
+    font-size:20px;
+    text-decoration:none;
+}
+.menu .center{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+.menu .about{
+    float:right;
+}
+.menu .find{
+    float:right;
+}
