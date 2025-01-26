@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    background:#50c90f;
+    width:100%;
+    overflow:auto;
+}
+.container>a{
+    float:left;
+    text-decoration:none;
+    padding:30px;
+    font-size:20px;
+    color:#ffffff;
+    transition:0.25s;
+}
+
+.container>a:hover{
+    background:#f0f8ff;
+    color:#50c90f;
+}
+a:last-child,a:last-child:hover{
+    float:right;
+    color:#ffffff;
+    background:#737271;
+}

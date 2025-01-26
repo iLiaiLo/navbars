@@ -1,0 +1,41 @@
+.container{
+    display:inline-block;
+    position:relative;
+}
+
+.container button{
+    padding:15px;
+    background:#ff6347;
+    color:#ffffff;
+    font-size:25px;
+    outline:none;
+    border:none;
+    transition:0.4s;
+    width:120px;
+}
+
+.container .content{
+    display:none;
+    z-index:1;
+    background:#ababab;
+    position:absolute;
+}
+
+.content .element{
+    padding:20px;
+    color:#000000;
+    font-size:20px;
+    width:200px;
+}
+.container:hover button{
+    background:#eb3a1b
+}
+
+.container:hover .content{
+    display:block;
+}
+.element:hover{
+    background:#5c5c5c;
+    cursor:pointer;
+}
+

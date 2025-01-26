@@ -1,0 +1,25 @@
+body{
+    margin:0;
+}
+#nav{
+    top:-100px;
+    position:fixed;
+    background:#000000;
+    overflow:hidden;
+    width:100%;
+    display:block;
+    transition:0.5s;
+}
+#nav a{
+    display:block;
+    padding:20px;
+    font-size:15px;
+    text-decoration:none;
+    color:#ffffff;
+    float:left;
+}
+
+#nav a:hover{
+    background:#139a13;
+    color:#000000;
+}
